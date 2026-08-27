@@ -40,54 +40,51 @@ they belong in [extras/courses](extras/courses.md), [extras/readings](extras/rea
 
 | Subject | Why study? | Book / Text | Online Resource |
 | --- | --- | --- | --- |
-| 1. What Is Heritage? | Core definitions, scope, and debates. | *The Uses of Heritage* – Laurajane Smith (optional) | **[What is Heritage? – OpenLearn (Open University)](https://www.open.edu/openlearn/history-the-arts/history/what-heritage/content-section-0)** |
-| 2. Culture, Memory, and Identity | Understanding heritage as socially constructed. | **[Perspectives: An Open Introduction to Cultural Anthropology](https://perspectives.americananthro.org/)** | **[Introduction to Anthropology – MIT OpenCourseWare](https://ocw.mit.edu/courses/21a-00-introduction-to-anthropology-spring-2013/)** |
-| 3. Global Historical Contexts | Colonialism, nationalism, globalization. | **[A History of the World in 100 Objects – Neil MacGregor](https://archive.org/details/historyofworldin0000macg)** | **[A History of the World in 100 Objects – BBC series](https://www.bbc.co.uk/programmes/b00nrtd2)** |
+| 1. What Is Heritage? | Core definitions, scope, and debates surrounding Authorised Heritage Discourse (AHD) vs. critical heritage. | Rodney Harrison, *Heritage: Critical Approaches* (Routledge) & Laurajane Smith, *Uses of Heritage* (Routledge) | **[What is Heritage? – OpenLearn (Open University)](https://www.open.edu/openlearn/history-the-arts/history/what-heritage/content-section-0)** |
+| 2. Culture, Memory, and Identity | Understanding heritage as a social construct, cultural transmission, and collective memory. | **[Perspectives: An Open Introduction to Cultural Anthropology](https://perspectives.americananthro.org/)** (Brown, Tubelle de González, & McIlwraith, eds.) & Astrid Erll, *Memory in Culture* (Palgrave Macmillan) | **[Introduction to Anthropology – MIT OpenCourseWare](https://ocw.mit.edu/courses/21a-00-introduction-to-anthropology-spring-2013/)** |
+| 3. Global Historical Contexts | Colonialism, nationalism, imperial collecting, and globalization in shaping cultural heritage. | Neil MacGregor, **[A History of the World in 100 Objects](https://archive.org/details/historyofworldin0000macg)** (Penguin Books) | **[A History of the World in 100 Objects – BBC series](https://www.bbc.co.uk/programmes/b00nrtd2)** |
 
 ## Heritage Methods and Evidence
 
 | Subject | Why study? | Book / Text | Online Resource |
 | --- | --- | --- | --- |
-| 4. Archaeology and Material Culture | Tangible heritage and material analysis. | Renfrew & Bahn, *Archaeology* (optional) | **[The Human Past – MIT OpenCourseWare](https://ocw.mit.edu/courses/3-986-the-human-past-introduction-to-archaeology-fall-2006/)** |
-| 5. Heritage Documentation and Conservation Methods | Recording, preservation ethics, intervention limits. | Muñoz Viñas | **[ICCROM – Introduction to Conservation of Cultural Heritage](https://www.iccrom.org/)** (general portal; see also related courses and publications on conservation basics) |
-| 6. Intangible and Living Heritage | Practices, traditions, transmission. | UNESCO framework: 2003 Convention explanatory texts | **[Living Heritage and Sustainable Development – UNESCO / SDG Academy](https://www.iccrom.org/publication/people-centred-approaches-conservation-cultural-heritage-living-heritage)** (related ICCROM/UNESCO guidance on living heritage) |
+| 4. Archaeology and Material Culture | Tangible heritage, archaeological recording, stratigraphy, and material analysis. | Colin Renfrew & Paul Bahn, *Archaeology: Theories, Methods, and Practice* (Thames & Hudson) | **[The Human Past: Introduction to Archaeology – MIT OpenCourseWare](https://ocw.mit.edu/courses/3-986-the-human-past-introduction-to-archaeology-fall-2006/)** |
+| 5. Heritage Documentation and Conservation Methods | Recording standards, preservation science, conservation ethics, and intervention limits (Venice & Burra Charters). | Salvador Muñoz Viñas, *Contemporary Theory of Conservation* (Routledge) & Australia ICOMOS, *The Burra Charter* | **[ICCROM – International Centre for the Study of the Preservation and Restoration of Cultural Property](https://www.iccrom.org/)** |
+| 6. Intangible and Living Heritage | Oral traditions, performing arts, social practices, rituals, craftsmanship, and living transmission mechanisms. | UNESCO, *Basic Texts of the 2003 Convention for the Safeguarding of the Intangible Cultural Heritage* (UNESCO Publishing) | **[Living Heritage and Sustainable Development – UNESCO](https://ich.unesco.org/en/sustainable-development-00659)** |
 
 ## Institutions, Governance, and Practice
 
 | Subject | Why study? | Book / Text | Online Resource |
 | --- | --- | --- | --- |
-| 7. Museums, Archives, and Collections | Institutional stewardship of heritage. | — | **[Behind the Scenes at the 21st Century Museum – University of Leicester + Smithsonian Learning Lab](https://learninglab.si.edu/)** (Smithsonian resources; Leicester course materials may require access) |
-| 8. Heritage Law, Policy, and Rights | Legal frameworks and power structures. | Craig Forrest | **[UNESCO 1972 & 2003 Conventions (official guides) + UNESCO repatriation case studies](https://whc.unesco.org/en/conventiontext/)** (1972); see also 2003 ICH Convention at UNESCO site |
-| 9. Heritage Management and Planning | Practical governance and sustainability. | — | **[UNESCO – Managing Cultural World Heritage (open manual)](https://whc.unesco.org/en/managing-cultural-world-heritage/)** + **[ICCROM – First Aid to Cultural Heritage in Times of Crisis](https://www.iccrom.org/)** (search for First Aid programme) |
+| 7. Museums, Archives, and Collections | Institutional stewardship, curatorial practice, preventative conservation, and collections management. | Edward P. Alexander, Mary Alexander, & Juilee Decker, *Museums in Motion: An Introduction to the History and Functions of Museums* (Rowman & Littlefield) | **[Smithsonian Learning Lab](https://learninglab.si.edu/)** |
+| 8. Heritage Law, Policy, and Rights | National and international legal frameworks (1954 Hague, 1970 UNESCO, 1972 World Heritage) and cultural property rights. | Craig Forrest, *International Law and the Protection of Cultural Heritage* (Routledge) | **[UNESCO World Heritage Convention Text (1972)](https://whc.unesco.org/en/conventiontext/)** |
+| 9. Heritage Management and Planning | Practical governance, site management plans, stakeholder analysis, and emergency preparedness. | UNESCO, ICCROM, ICOMOS, & IUCN, *Managing Cultural World Heritage (World Heritage Resource Manual)* | **[UNESCO – Managing Cultural World Heritage (Open Manual)](https://whc.unesco.org/en/managing-cultural-world-heritage/)** |
 
 ## Interpretation, Ethics, and Public Engagement
 
 | Subject | Why study? | Book / Text | Online Resource |
 | --- | --- | --- | --- |
-| 10. Public History and Interpretation | Communicating heritage to diverse publics. | *The Public History Reader* (optional) | **[Ethics of Cultural Heritage – OpenLearn](https://www.open.edu/openlearn/history-the-arts/ethics-cultural-heritage/content-section-0)** |
-| 11. Politics, Ethics, and Decolonial Heritage | Contestation, ownership, identity. | — | **[OpenLearn – The Ethics of Cultural Heritage](https://www.open.edu/openlearn/history-the-arts/ethics-cultural-heritage/content-section-0)** + **[ICOM Code of Ethics](https://icom.museum/en/resources/standards-guidelines/code-of-ethics/)** |
-| 12. Community and Indigenous Heritage | Participation, co-curation, authority. | Community-based heritage management guides | **[Creating Meaningful and Inclusive Museum Practices – ICOM / FutureLearn](https://www.futurelearn.com/courses/inclusive-museum-practices)** (related inclusive practices) |
+| 10. Public History and Interpretation | Communicating heritage to diverse publics, thematic interpretive planning, and exhibition narratives. | Freeman Tilden, *Interpreting Our Heritage* (University of North Carolina Press) & Hilda Kean & Paul Martin (eds.), *The Public History Reader* (Routledge) | **[Applied Public History: Places, People, Stories – University of London / Coursera](https://www.coursera.org/learn/applied-public-history)** |
+| 11. Politics, Ethics, and Decolonial Heritage | Contested sites, restitution and repatriation of looted cultural property, and professional codes of ethics. | Dan Hicks, *The Brutish Museums: The Benin Bronzes, Colonial Violence and Cultural Restitution* (Pluto Press) | **[The Ethics of Cultural Heritage – OpenLearn](https://www.open.edu/openlearn/history-the-arts/ethics-cultural-heritage/content-section-0)** + **[ICOM Code of Ethics for Museums](https://icom.museum/en/resources/standards-guidelines/code-of-ethics/)** |
+| 12. Community and Indigenous Heritage | Participatory heritage, co-curation, shared authority, and Indigenous cultural intellectual property. | Laura Jane Smith & Emma Waterton, *Heritage, Communities and Identities* (Routledge) | **[Creating Meaningful and Inclusive Museum Practices – ICOM / FutureLearn](https://www.futurelearn.com/courses/inclusive-museum-practices)** |
 
 ## Global, Digital, and Sustainable Futures
 
 | Subject | Why study? | Book / Text | Online Resource |
 | --- | --- | --- | --- |
-| 13. World Heritage Systems | Universal value, critique, geopolitics. | **[Galla, World Heritage: Benefits Beyond Borders](https://whc.unesco.org/en/activities/)** (related UNESCO resources) + **[World Heritage – OpenLearn](https://www.open.edu/openlearn/history-the-arts/world-heritage/content-section-0)** | — |
-| 14. Digital Heritage | Access, preservation, ethics of digitization. | — | **[Digital Education with Cultural Heritage – Europeana](https://www.europeana.eu/en)** + **[Europeana open collections](https://www.europeana.eu/en/collections)** |
-| 15. Heritage, Tourism, Environment, and Risk | Sustainability, climate, economics. | **[UNESCO climate & heritage reports](https://whc.unesco.org/en/climatechange/)** | **[Living Heritage and Sustainable Development – UNESCO](https://ich.unesco.org/en/sustainable-development-00659)** |
+| 13. World Heritage Systems | Outstanding Universal Value (OUV), nomination mechanisms, international politics, and critique of the global regime. | Lynn Meskell, *A Future in Ruins: UNESCO, World Heritage, and the Dream of Peace* (Oxford University Press) & Amareswar Galla (ed.), *World Heritage: Benefits Beyond Borders* (Cambridge University Press) | **[UNESCO World Heritage Centre Portal](https://whc.unesco.org/en/about/)** |
+| 14. Digital Heritage | 3D documentation, photogrammetry, digital curation, virtual access, and the ethics of digital surrogates. | Fiona Cameron & Sarah Kenderdine (eds.), *Theorizing Digital Heritage: A Critical Discourse* (MIT Press) | **[Europeana – Digital Cultural Heritage Platform & Collections](https://www.europeana.eu/en)** |
+| 15. Heritage, Tourism, Environment, and Risk | Heritage economics, overtourism, climate change adaptation, disaster risk reduction, and environmental resilience. | Dallen J. Timothy, *Cultural Heritage and Tourism: An Introduction* (Channel View Publications) | **[UNESCO Climate Change and World Heritage Reports](https://whc.unesco.org/en/climatechange/)** |
 
 ## Final Project
 
 Independent applied work demonstrating mastery. Options:
 
-- Research paper on a heritage site/case study (e.g., analyzing politics of a UNESCO listing).
-- Heritage management plan for a local site.
-- Curatorial proposal or interpretive exhibit design.
-- Critical essay on a contemporary issue (e.g., repatriation or intangible heritage safeguarding).
+- Research paper on a heritage site or case study (e.g., analyzing the politics and controversies of a UNESCO World Heritage nomination).
+- Heritage Conservation and Management Plan for a local historical building, archaeological site, or cultural landscape.
+- Curatorial proposal and public interpretation plan for a museum exhibition or community heritage project.
+- Critical essay on a contemporary policy issue (e.g., illicit antiquities trafficking, museum restitution, or intangible heritage safeguarding under climate risk).
 
 # Code of conduct
 
 [Hocbigg's code of conduct](https://github.com/hocbigg/code-of-conduct).
-
-
-
