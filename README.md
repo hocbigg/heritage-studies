@@ -3,25 +3,16 @@ title: Hocbigg - Heritage Studies
 description: Path to a free self-taught education in Heritage Studies!
 ---
 
-# Contents
 
-- [Summary](#summary)
-- [Communities](#communities)
-- [Curriculum](#curriculum)
-- [Code of conduct](#code-of-conduct)
-
-# Summary
+## Introduction
 
 The Heritage Studies curriculum is a **complete education in Heritage Studies** using online materials.
 
 Heritage Studies is an interdisciplinary field examining the identification, interpretation, preservation, management, and contestation of cultural and natural heritage. It draws from anthropology, history, archaeology, museum studies, law, policy, and sociology, emphasizing both tangible (sites, objects) and intangible (traditions, practices) elements.
 
-Note: When there are courses or books that don't fit into the curriculum but are otherwise of high quality,
-they belong in [extras/courses](extras/courses.md), [extras/readings](extras/readings.md).
-
 **[How to contribute](/CONTRIBUTING.html)**
 
-# Communities
+## Communities
 
 - [Heritage Workspace](https://historicengland.org.uk/services-skills/training-skills/heritageskills-cpd/online-forums/)
 - **Subreddits**:
@@ -29,61 +20,99 @@ they belong in [extras/courses](extras/courses.md), [extras/readings](extras/rea
     - [r/HistoricPreservation](https://www.reddit.com/r/HistoricPreservation/)
     - [r/CulturalHeritage](https://www.reddit.com/r/CulturalHeritage/)
 - You can also interact through [GitHub issues](https://github.com/hocbigg/heritage-studies/issues). If there is a problem with a course, or a change needs to be made to the curriculum, this is the place to start the conversation. Read more [here](/CONTRIBUTING.html).
-- Join our Discord server (for discussions around this and other curricula): 
-    
-    [![discord link](/assets/discord.png)](https://discord.gg/KHqAv4Nvm5)
 
-# Curriculum
+## Curriculum
 
-## Foundations of Heritage Studies
+### Introduction to Critical Heritage Studies
 
-| Subject | Why study? | Book / Text | Online Resource |
-| --- | --- | --- | --- |
-| 1. What Is Heritage? | Core definitions, scope, and debates surrounding Authorised Heritage Discourse (AHD) vs. critical heritage. | Rodney Harrison, *[Heritage: Critical Approaches](https://books.google.com/books?isbn=9780415591959)* (Routledge) & Laurajane Smith, *[Uses of Heritage](https://books.google.com/books?isbn=9780415348898)* (Routledge) | **[What is Heritage? – OpenLearn (Open University)](https://www.open.edu/openlearn/history-the-arts/history/what-heritage/content-section-0)** |
-| 2. Culture, Memory, and Identity | Understanding heritage as a social construct, cultural transmission, and collective memory. | **[Perspectives: An Open Introduction to Cultural Anthropology](https://perspectives.americananthro.org/)** (Brown, Tubelle de González, & McIlwraith, eds.) & Astrid Erll, *Memory in Culture* (Palgrave Macmillan) | **[Introduction to Anthropology – MIT OpenCourseWare](https://ocw.mit.edu/courses/21a-00-introduction-to-anthropology-spring-2013/)** |
-| 3. Global Historical Contexts | Colonialism, nationalism, imperial collecting, and globalization in shaping cultural heritage. | Neil MacGregor, **[A History of the World in 100 Objects](https://archive.org/details/historyofworldin0000macg)** (Penguin Books) | **[A History of the World in 100 Objects – BBC series](https://www.bbc.co.uk/programmes/b00nrtd2)** |
+This subject examines foundational definitions of heritage, tracing its evolution from physical monuments to cultural processes while interrogating the Authorized Heritage Discourse (AHD) and the critical turn.
 
-## Heritage Methods and Evidence
+[What is heritage? (OpenLearn / The Open University)](https://www.open.edu/openlearn/history-the-arts/history/what-heritage/content-section-0) - Recommended starting point; this free introductory course provides an accessible entry ramp to core definitions and official designations before tackling deeper theory.
 
-| Subject | Why study? | Book / Text | Online Resource |
-| --- | --- | --- | --- |
-| 4. Archaeology and Material Culture | Tangible heritage, archaeological recording, stratigraphy, and material analysis. | Colin Renfrew & Paul Bahn, *[Archaeology: Theories, Methods, and Practice](https://archive.org/details/archaeologytheor0000renf)* (Thames & Hudson) | **[The Human Past: Introduction to Archaeology – MIT OpenCourseWare](https://ocw.mit.edu/courses/3-986-the-human-past-introduction-to-archaeology-fall-2006/)** |
-| 5. Heritage Documentation and Conservation Methods | Recording standards, preservation science, conservation ethics, and intervention limits (Venice & Burra Charters). | Salvador Muñoz Viñas, *[Contemporary Theory of Conservation](https://books.google.com/books?isbn=9780750662246)* (Routledge) & Australia ICOMOS, *[The Burra Charter](https://australia.icomos.org/publications/burra-charter-practice-notes/)* | **[ICCROM – International Centre for the Study of the Preservation and Restoration of Cultural Property](https://www.iccrom.org/)** |
-| 6. Intangible and Living Heritage | Oral traditions, performing arts, social practices, rituals, craftsmanship, and living transmission mechanisms. | UNESCO, *[Basic Texts of the 2003 Convention for the Safeguarding of the Intangible Cultural Heritage](https://ich.unesco.org/en/basic-texts-00503)* (UNESCO Publishing) | **[Living Heritage and Sustainable Development – UNESCO](https://ich.unesco.org/en/sustainable-development-00659)** |
+[Heritage: Critical Approaches (Rodney Harrison)](https://books.google.com/books?isbn=9780415591959) - Core comprehensive textbook; works sequentially after the OpenLearn course to build a systematic foundation in critical heritage theory.
 
-## Institutions, Governance, and Practice
+[Uses of Heritage (Laurajane Smith)](https://books.google.com/books?isbn=9780415348898) - A theoretical deep-dive to read alongside or immediately after Harrison; establishes the foundational Authorized Heritage Discourse (AHD) framework that underpins the entire discipline.
 
-| Subject | Why study? | Book / Text | Online Resource |
-| --- | --- | --- | --- |
-| 7. Museums, Archives, and Collections | Institutional stewardship, curatorial practice, preventative conservation, and collections management. | Edward P. Alexander, Mary Alexander, & Juilee Decker, *[Museums in Motion: An Introduction to the History and Functions of Museums](https://archive.org/details/museumsinmotioni0000alex)* (Rowman & Littlefield) | **[Smithsonian Learning Lab](https://learninglab.si.edu/)** |
-| 8. Heritage Law, Policy, and Rights | National and international legal frameworks (1954 Hague, 1970 UNESCO, 1972 World Heritage) and cultural property rights. | Craig Forrest, *[International Law and the Protection of Cultural Heritage](https://books.google.com/books?isbn=9780415467810)* (Routledge) | **[UNESCO World Heritage Convention Text (1972)](https://whc.unesco.org/en/conventiontext/)** |
-| 9. Heritage Management and Planning | Practical governance, site management plans, stakeholder analysis, and emergency preparedness. | UNESCO, ICCROM, ICOMOS, & IUCN, *[Managing Cultural World Heritage (World Heritage Resource Manual)](https://whc.unesco.org/en/managing-cultural-world-heritage/)* | **[UNESCO – Managing Cultural World Heritage (Open Manual)](https://whc.unesco.org/en/managing-cultural-world-heritage/)** |
+### Cultural Memory, Commemoration, and Identity
 
-## Interpretation, Ethics, and Public Engagement
+This subject explores how societies construct collective memory, deploy commemorative practices, and utilize the past to shape social, political, and national identities.
 
-| Subject | Why study? | Book / Text | Online Resource |
-| --- | --- | --- | --- |
-| 10. Public History and Interpretation | Communicating heritage to diverse publics, thematic interpretive planning, and exhibition narratives. | Freeman Tilden, *[Interpreting Our Heritage](https://archive.org/details/interpretingourh0000tild)* (University of North Carolina Press) & Hilda Kean & Paul Martin (eds.), *[The Public History Reader](https://books.google.com/books?isbn=9780415520416)* (Routledge) | **[Applied Public History: Places, People, Stories – University of London / Coursera](https://www.coursera.org/learn/applied-public-history)** |
-| 11. Politics, Ethics, and Decolonial Heritage | Contested sites, restitution and repatriation of looted cultural property, and professional codes of ethics. | Dan Hicks, *[The Brutish Museums: The Benin Bronzes, Colonial Violence and Cultural Restitution](https://books.google.com/books?isbn=9780745341767)* (Pluto Press) | **[The Ethics of Cultural Heritage – OpenLearn](https://www.open.edu/openlearn/history-the-arts/ethics-cultural-heritage/content-section-0)** + **[ICOM Code of Ethics for Museums](https://icom.museum/en/resources/standards-guidelines/code-of-ethics/)** |
-| 12. Community and Indigenous Heritage | Participatory heritage, co-curation, shared authority, and Indigenous cultural intellectual property. | Laura Jane Smith & Emma Waterton, *Heritage, Communities and Identities* (Routledge) | **[Creating Meaningful and Inclusive Museum Practices – ICOM / FutureLearn](https://www.futurelearn.com/courses/inclusive-museum-practices)** |
+[Memory in Culture (Astrid Erll)](https://books.google.com/books?isbn=9780230297449) - Core conceptual guide; offers a compact, structured introduction to cultural memory terms, media, and frameworks.
 
-## Global, Digital, and Sustainable Futures
+[The Past is a Foreign Country — Revisited (David Lowenthal)](https://books.google.com/books?isbn=9780521616850) - An expansive, narrative alternative to Erll for learners wanting an exhaustive exploration of nostalgia and societal appropriations of history rather than a concise handbook.
 
-| Subject | Why study? | Book / Text | Online Resource |
-| --- | --- | --- | --- |
-| 13. World Heritage Systems | Outstanding Universal Value (OUV), nomination mechanisms, international politics, and critique of the global regime. | Lynn Meskell, *[A Future in Ruins: UNESCO, World Heritage, and the Dream of Peace](https://books.google.com/books?isbn=9780190648367)* (Oxford University Press) & Amareswar Galla (ed.), *[World Heritage: Benefits Beyond Borders](https://books.google.com/books?isbn=9781107035690)* (Cambridge University Press) | **[UNESCO World Heritage Centre Portal](https://whc.unesco.org/en/about/)** |
-| 14. Digital Heritage | 3D documentation, photogrammetry, digital curation, virtual access, and the ethics of digital surrogates. | Fiona Cameron & Sarah Kenderdine (eds.), *[Theorizing Digital Heritage: A Critical Discourse](https://books.google.com/books?isbn=9780262033534)* (MIT Press) | **[Europeana – Digital Cultural Heritage Platform & Collections](https://www.europeana.eu/en)** |
-| 15. Heritage, Tourism, Environment, and Risk | Heritage economics, overtourism, climate change adaptation, disaster risk reduction, and environmental resilience. | Dallen J. Timothy, *[Cultural Heritage and Tourism: An Introduction](https://books.google.com/books?isbn=9781845411770)* (Channel View Publications) | **[UNESCO Climate Change and World Heritage Reports](https://whc.unesco.org/en/climatechange/)** |
+[How Societies Remember (Paul Connerton)](https://books.google.com/books?isbn=9780521270939) - A short, focused companion to Erll that specifically investigates bodily performance, ritual, and commemorative ceremonies.
 
-## Final Project
+### Material Culture, Built Heritage, and Conservation Theory
 
-Independent applied work demonstrating mastery. Options:
+This subject covers tangible heritage, architectural significance, physical decay, values-based assessment, and the philosophical ethics governing conservation intervention.
 
-- Research paper on a heritage site or case study (e.g., analyzing the politics and controversies of a UNESCO World Heritage nomination).
-- Heritage Conservation and Management Plan for a local historical building, archaeological site, or cultural landscape.
-- Curatorial proposal and public interpretation plan for a museum exhibition or community heritage project.
-- Critical essay on a contemporary policy issue (e.g., illicit antiquities trafficking, museum restitution, or intangible heritage safeguarding under climate risk).
+[Cultural Heritage in Transformation (RWTH Aachen University / edX)](https://www.edx.org/learn/cultural-heritage/rwth-aachen-university-cultural-heritage-in-transformation) - Visual and practical entry point; provides an interactive foundation in documenting, evaluating, and transforming built environments.
 
-# Code of conduct
+[Contemporary Theory of Conservation (Salvador Muñoz Viñas)](https://books.google.com/books?isbn=9780750662246) - Core theoretical text; challenges traditional material authenticity dogmas and establishes a modern, values-based conservation philosophy.
 
-[Hocbigg's code of conduct](https://github.com/hocbigg/code-of-conduct).
+[Assessing the Values of Cultural Heritage (Getty Conservation Institute / Marta de la Torre, ed.)](https://www.getty.edu/conservation/publications_resources/pdf_publications/assessing_values.html) - An applied, open-access companion to Muñoz Viñas that offers practical frameworks and methodologies for assessing social, historical, and economic values in conservation planning.
+
+### Intangible and Living Cultural Heritage
+
+This subject addresses living cultural expressions, oral histories, traditional craftsmanship, performing arts, and community-centered frameworks for safeguarding non-physical heritage.
+
+[Living Heritage and Sustainable Development (UNESCO & SDG Academy / edX)](https://www.edx.org/learn/sustainable-development/sdg-academy-living-heritage-and-sustainable-development) - Highly recommended entry point; a free, structured course exploring community safeguarding mechanisms and living cultural practices.
+
+[Intangible Heritage (Laurajane Smith & Natsuko Akagawa, eds.)](https://books.google.com/books?isbn=9780415473972) - Primary academic reader; builds directly on the UNESCO course with critical essays analyzing the conceptual shifts and policy tensions surrounding intangible heritage.
+
+[The Routledge Companion to Intangible Cultural Heritage (Michelle L. Stefano & Peter Davis, eds.)](https://books.google.com/books?isbn=9780367872076) - An alternative, broader reference anthology to Smith and Akagawa for learners seeking extensive global case studies across diverse safeguarding traditions.
+
+### Museums, Collections, and Curatorial Practice
+
+This subject explores the institutional evolution of museums, provenance, collections stewardship, preventive conservation, and the politics of cultural representation.
+
+[Museums in Motion: An Introduction to the History and Functions of Museums (Edward P. Alexander, Mary Alexander, & Juilee Decker)](https://archive.org/details/museumsinmotioni0000alex) - Primary comprehensive textbook; introduces the operational structures, curatorial functions, exhibition strategies, and institutional histories of museums.
+
+[Arts and Heritage Management (Università Bocconi / Coursera)](https://www.coursera.org/learn/arts-heritage) - An applied audiovisual complement to Alexander; focuses on contemporary governance, strategic decision-making, funding models, and community audience engagement.
+
+### International Heritage Law, Policy, and World Heritage Systems
+
+This subject examines international legal mechanisms for heritage protection, the 1972 World Heritage Convention, Outstanding Universal Value (OUV), and global governance structures.
+
+[The Ethics of Cultural Heritage (The Open University / OpenLearn)](https://www.open.edu/openlearn/history-the-arts/ethics-cultural-heritage/content-section-0) - An accessible entry ramp; introduces the 1954 Hague Convention, military necessity, and foundational legal and ethical dilemmas in protecting cultural property during conflict.
+
+[International Law and the Protection of Cultural Heritage (Craig Forrest)](https://books.google.com/books?isbn=9780415467810) - Core legal reference; provides a thorough, systematic analysis of the major international conventions protecting heritage in war, peace, and trade.
+
+[A Future in Ruins: UNESCO, World Heritage, and the Dream of Peace (Lynn Meskell)](https://books.google.com/books?isbn=9780190648367) - Critical institutional counterpart to Forrest; examines how national diplomacy, political maneuvering, and bureaucratic interests shape actual World Heritage listings.
+
+### Heritage Site Management and Conservation Planning
+
+This subject focuses on the operational governance of heritage places, conservation management plans (CMPs), stakeholder coordination, sustainable tourism, carrying capacity, and disaster risk reduction.
+
+[Managing Cultural World Heritage (UNESCO, ICCROM, ICOMOS, & IUCN)](https://whc.unesco.org/en/managing-cultural-world-heritage/) - Primary practical blueprint; a free open-access manual providing step-by-step guidance on crafting site management plans, defining boundaries, and establishing monitoring indicators.
+
+[Cultural Heritage and Tourism: An Introduction (Dallen J. Timothy)](https://books.google.com/books?isbn=9781845411770) - Complementary operational text; examines the economic opportunities, visitor carrying-capacity challenges, and commodification risks that site managers must navigate.
+
+### Heritage Interpretation and Public Engagement
+
+This subject analyzes the theoretical and practical strategies used to communicate historical and cultural significance to diverse publics through storytelling, media, and exhibitions.
+
+[Interpreting Our Heritage (Freeman Tilden)](https://archive.org/details/interpretingourh0000tild) - Foundational classic; establishes the six timeless principles of public heritage interpretation and thematic communication.
+
+[Applied Public History: Places, People, Stories (University of London / Coursera)](https://www.coursera.org/learn/applied-public-history) - An applied, interactive workshop that translates Tilden's principles into practice through place-based research, oral histories, and public storytelling.
+
+[The Public History Reader (Hilda Kean & Paul Martin, eds.)](https://books.google.com/books?isbn=9780415520416) - An alternative academic reader for learners wanting broader scholarly perspectives on how communities consume, remember, and contest history outside academia.
+
+### Heritage Ethics, Contested Pasts, and Decolonial Practice
+
+This subject confronts the ethical controversies of the heritage sector, including antiquities looting, illicit trade, restitution of colonial plunder, difficult histories, and Indigenous sovereignty.
+
+[Antiquities Trafficking and Art Crime (University of Glasgow / FutureLearn)](https://www.futurelearn.com/courses/art-crime) - Introductory audiovisual course covering illicit antiquities markets, white-collar crime, and global legal recovery efforts.
+
+[The Brutish Museums: The Benin Bronzes, Colonial Violence and Cultural Restitution (Dan Hicks)](https://books.google.com/books?isbn=9780745341767) - A powerful monograph examining colonial plunder, universal museums, and the moral and historical imperative for repatriating looted cultural heritage.
+
+[Heritage, Communities and Archaeology (Laurajane Smith & Emma Waterton)](https://books.google.com/books?isbn=9780715636817) - A complementary text focusing on community empowerment, descendant stakeholders, and shared archaeological authority.
+
+[Creating Meaningful and Inclusive Museum Practices (International Council of Museums / FutureLearn)](https://www.futurelearn.com/courses/inclusive-museum-practices) - Applied practitioner course that translates decolonial and participatory ethics into inclusive museum programming and co-curation workflows.
+
+### Applied Heritage Capstone Project
+
+This capstone module synthesizes theoretical frameworks, regulatory principles, and management tools through the independent development of a site plan, curatorial proposal, or critical policy evaluation.
+
+[Public History: A Textbook of Practice (Thomas Cauvin)](https://books.google.com/books?isbn=9780367473082) - Comprehensive operational manual offering practical methodologies for historical preservation, collections management, public interpretation, and project execution.
