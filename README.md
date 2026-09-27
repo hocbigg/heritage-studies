@@ -3,16 +3,27 @@ title: Hocbigg - Heritage Studies
 description: Path to a free self-taught education in Heritage Studies!
 ---
 
-
 ## Introduction
 
-The Heritage Studies curriculum is a **complete education in Heritage Studies** using online materials.
+Heritage Studies investigates how societies select, interpret, safeguard, and contest the past in the present. Rather than treating heritage merely as a passive inventory of old buildings, museum artifacts, or ancient ruins, the discipline analyzes heritage as an active social, political, and economic process. It examines who holds the authority to define what is worth preserving, how collective memory shapes national and local identities, and how cultural places and living traditions are sustained amid urban development, tourism pressures, environmental risk, and global politics.
 
-Heritage Studies is an interdisciplinary field examining the identification, interpretation, preservation, management, and contestation of cultural and natural heritage. It draws from anthropology, history, archaeology, museum studies, law, policy, and sociology, emphasizing both tangible (sites, objects) and intangible (traditions, practices) elements.
+This curriculum is intended for independent, self-directed learners and career changers with no prior formal background in history, archaeology, or museum administration. It provides a structured foundation in the critical concepts, legal conventions, conservation theories, and operational planning tools used across the contemporary cultural heritage sector.
 
-**[How to contribute](/CONTRIBUTING.html)**
+### Curricular Structure
 
-## Communities
+The curriculum balances conceptual critique with practical management and is designed to be studied in a three-stage progression:
+
+- **Theoretical Foundations:** Begin with *Introduction to Critical Heritage Studies* and *Cultural Memory, Commemoration, and Identity*. These initial subjects establish the core vocabulary of the field—particularly the Authorized Heritage Discourse (AHD)—and examine how societies use the past to build identity and negotiate collective memory.
+- **Sectors, Governance, and Site Practice:** Once the theoretical groundwork is set, work through the core domains of heritage stewardship: *Material Culture, Built Heritage, and Conservation Theory*, *Intangible and Living Cultural Heritage*, *Museums, Collections, and Curatorial Practice*, *International Heritage Law, Policy, and World Heritage Systems*, and *Heritage Site Management and Conservation Planning*. While presented in a logical sequence from material objects to site governance, these subjects can be studied flexibly based on whether your immediate interest leans toward physical conservation, living folklore, or international cultural property law.
+- **Ethics, Interpretation, and Synthesis:** Conclude with *Heritage Interpretation and Public Engagement* and *Heritage Ethics, Contested Pasts, and Decolonial Practice* to confront pressing questions of community co-curation, antiquities trafficking, and museum repatriation. Finally, apply these integrated tools in the *Applied Heritage Capstone Project* by drafting an independent site management plan, interpretive scheme, or policy evaluation.
+
+### Scope and Extended Learning
+
+This program covers only the shared, foundational knowledge that every learner in Heritage Studies should master before specializing. It intentionally leaves out narrow, highly technical subfields—such as 3D laser scanning and photogrammetric documentation, underwater cultural heritage, archival preservation chemistry, or paleopathology.
+
+Once you have completed this foundational core, you can explore landmark monographs and critical essays in [Readings](extras/readings.md), or follow guided lecture series and audio-visual deep dives in [Courses](extras/courses.md).
+
+### Communities
 
 - [Heritage Workspace](https://historicengland.org.uk/services-skills/training-skills/heritageskills-cpd/online-forums/)
 - **Subreddits**:
