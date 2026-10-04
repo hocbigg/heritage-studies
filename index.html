@@ -1,238 +1,398 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light dark">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
 
-<title>Hocbigg - Heritage Studies</title>
-<link rel="stylesheet" href="/heritage-studies/style.css">
-<meta name="description" content="Path to a free self-taught education in Heritage Studies!">
+  <title>Hocbigg - Heritage Studies</title>
+  <meta name="description" content="Path to a free self-taught education in Heritage Studies!">
+  <meta name="author" content="hocbigg">
 
-<link rel="canonical" href="https://hocbigg.github.io/heritage-studies/">
+  <link rel="canonical" href="https://hocbigg.github.io/heritage-studies/">
+  <meta property="og:title" content="Hocbigg - Heritage Studies">
+  <meta property="og:description" content="Path to a free self-taught education in Heritage Studies!">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hocbigg.github.io/heritage-studies/">
+  <link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
 
-<meta property="og:title" content="Hocbigg - Heritage Studies">
-<meta property="og:description" content="Path to a free self-taught education in Heritage Studies!">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://hocbigg.github.io/heritage-studies/">
-<meta name="author" content="hocbigg">
-<link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
+  <style>
+:root {
+  color-scheme: light dark;
+
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #595959;
+  --border: #e0e0e0;
+  --th-bg: #f6f8fa;
+  --code-bg: #f4f4f4;
+  --link: #0969da;
+  --focus-ring: #0969da;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #8b949e;
+    --border: #30363d;
+    --th-bg: #161b22;
+    --code-bg: #161b22;
+    --link: #58a6ff;
+    --focus-ring: #58a6ff;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1.5rem auto;
+  max-width: 60rem;
+  padding: 0 1rem 3.5rem;
+  background-color: var(--bg);
+  color: var(--fg);
+  font: 1.15rem/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Cú pháp hiện đại thay thế cho word-wrap */
+  overflow-wrap: break-word;
+}
+
+.site-header {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem 1.25rem;
+  font-size: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+nav a:hover, 
+nav a:focus-visible {
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+nav .nav-brand {
+  color: var(--fg);
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.skip-link {
+  position: absolute;
+  transform: translateY(-150%);
+  left: 1rem;
+  background: var(--fg);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(1rem);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--fg);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 1rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+p, ul, ol, blockquote, table {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+li > ul,
+li > ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:has(img) {
+  text-decoration: none;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.page-header .page-subtitle {
+  color: var(--muted);
+  font-size: 1.15rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header img {
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  background-color: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  tab-size: 2;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 0;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.75rem;
+  vertical-align: top;
+}
+
+th {
+  background-color: var(--th-bg);
+  font-weight: 600;
+}
+
+blockquote {
+  margin-inline: 0;
+  border-left: 4px solid var(--border);
+  padding-left: 1rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  body {
+    max-width: none;
+    color: #000;
+    background: #fff;
+  }
+  .skip-link, nav {
+    display: none;
+  }
+}
+  </style>
 </head>
-
 <body>
 
-<nav>
-<a href="/">Hocbigg</a>
-<a href="/heritage-studies/">Heritage-Studies</a>
-<a href="/heritage-studies/extras/courses.html">Extra Courses</a>
-<a href="/heritage-studies/extras/readings.html">Extra Reading</a>
-<a href="https://github.com/hocbigg/heritage-studies/" target="_blank">View on Github</a>
-</nav>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<main>
-<article>
+  <header class="site-header">
+    <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="https://hocbigg.github.io/" class="nav-brand">Hocbigg</a></li>
+      <li><a href="/heritage-studies/">Heritage Studies</a></li>
+      <li><a href="/heritage-studies/extras/readings.html">Extra Readings</a></li>
+      <li><a href="/heritage-studies/extras/courses.html">Extra Courses</a></li>
+      <li><a href="https://github.com/hocbigg/heritage-studies" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    </nav>
+  </header>
 
+  <main id="main-content">
+    <article>
 <header class="page-header">
-  <img src="/images/logo.png" alt="">
+  <img src="/images/logo.png" alt="Hocbigg logo">
   <h1>Hocbigg - Heritage Studies</h1>
+  <p class="page-subtitle">Path to a free self-taught education in Heritage Studies!</p>
+  <p class="last-updated"><small>Last updated on: <time datetime="2026-10-01">2026-10-01</time></small></p>
 </header>
-
-<h1 id="contents">Contents</h1>
+<h2 id="introduction">Introduction</h2>
+<p>Heritage Studies investigates how societies select, interpret, safeguard, and contest the past in the present. Rather than treating heritage merely as a passive inventory of old buildings, museum artifacts, or ancient ruins, the discipline analyzes heritage as an active social, political, and economic process. It examines who holds the authority to define what is worth preserving, how collective memory shapes national and local identities, and how cultural places and living traditions are sustained amid urban development, tourism pressures, environmental risk, and global politics.</p>
+<p>This curriculum is intended for independent, self-directed learners with no prior formal background in history, archaeology, or museum administration. It provides a structured foundation in the critical concepts, legal conventions, conservation theories, and operational planning tools used across the contemporary cultural heritage sector.</p>
+<h3 id="curricular-structure">Curricular Structure</h3>
+<p>The curriculum balances conceptual critique with practical management and is designed to be studied in a three-stage progression:</p>
 <ul>
-<li><a href="#summary">Summary</a></li>
-<li><a href="#communities">Communities</a></li>
-<li><a href="#curriculum">Curriculum</a></li>
-<li><a href="#code-of-conduct">Code of conduct</a></li>
+<li><strong>Theoretical Foundations:</strong> Begin with <em>Introduction to Critical Heritage Studies</em> and <em>Cultural Memory, Commemoration, and Identity</em>. These initial subjects establish the core vocabulary of the field—particularly the Authorized Heritage Discourse (AHD)—and examine how societies use the past to build identity and negotiate collective memory.</li>
+<li><strong>Sectors, Governance, and Site Practice:</strong> Once the theoretical groundwork is set, work through the core domains of heritage stewardship: <em>Material Culture, Built Heritage, and Conservation Theory</em>, <em>Intangible and Living Cultural Heritage</em>, <em>Museums, Collections, and Curatorial Practice</em>, <em>International Heritage Law, Policy, and World Heritage Systems</em>, and <em>Heritage Site Management and Conservation Planning</em>. While presented in a logical sequence from material objects to site governance, these subjects can be studied flexibly based on whether your immediate interest leans toward physical conservation, living folklore, or international cultural property law.</li>
+<li><strong>Ethics, Interpretation, and Synthesis:</strong> Conclude with <em>Heritage Interpretation and Public Engagement</em> and <em>Heritage Ethics, Contested Pasts, and Decolonial Practice</em> to confront pressing questions of community co-curation, antiquities trafficking, and museum repatriation. Finally, apply these integrated tools in the <em>Applied Heritage Capstone Project</em> by drafting an independent site management plan, interpretive scheme, or policy evaluation.</li>
 </ul>
-<h1 id="summary">Summary</h1>
-<p>The Heritage Studies curriculum is a <strong>complete education in Heritage Studies</strong> using online materials.</p>
-<p>Heritage Studies is an interdisciplinary field examining the identification, interpretation, preservation, management, and contestation of cultural and natural heritage. It draws from anthropology, history, archaeology, museum studies, law, policy, and sociology, emphasizing both tangible (sites, objects) and intangible (traditions, practices) elements.</p>
-<p>Note: When there are courses or books that don't fit into the curriculum but are otherwise of high quality,
-they belong in <a href="extras/courses.html">extras/courses</a>, <a href="extras/readings.html">extras/readings</a>.</p>
-<p><strong><a href="/CONTRIBUTING.html">How to contribute</a></strong></p>
-<h1 id="communities">Communities</h1>
+<h3 id="scope">Scope</h3>
+<p>This program covers only the shared, foundational knowledge that every learner in Heritage Studies should master before specializing. It intentionally leaves out narrow, highly technical subfields—such as 3D laser scanning and photogrammetric documentation, underwater cultural heritage, archival preservation chemistry, or paleopathology.</p>
+<p>Once you have completed this foundational core, you can explore landmark monographs and critical essays in <a href="extras/readings.html">Readings</a>, or follow guided lecture series and audio-visual deep dives in <a href="extras/courses.html">Courses</a>.</p>
+<h3 id="communities">Communities</h3>
 <ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://historicengland.org.uk/services-skills/training-skills/heritageskills-cpd/online-forums/">Heritage Workspace</a></li>
+<li><a href="https://historicengland.org.uk/services-skills/training-skills/heritageskills-cpd/online-forums/" target="_blank" rel="noopener noreferrer">Heritage Workspace</a></li>
 <li><strong>Subreddits</strong>:<ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.reddit.com/r/MuseumPros/">r/MuseumPros</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.reddit.com/r/HistoricPreservation/">r/HistoricPreservation</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.reddit.com/r/CulturalHeritage/">r/CulturalHeritage</a></li>
+<li><a href="https://www.reddit.com/r/MuseumPros/" target="_blank" rel="noopener noreferrer">r/MuseumPros</a></li>
+<li><a href="https://www.reddit.com/r/HistoricPreservation/" target="_blank" rel="noopener noreferrer">r/HistoricPreservation</a></li>
+<li><a href="https://www.reddit.com/r/CulturalHeritage/" target="_blank" rel="noopener noreferrer">r/CulturalHeritage</a></li>
 </ul>
 </li>
-<li>You can also interact through <a target="_blank" rel="noopener noreferrer" href="https://github.com/hocbigg/heritage-studies/issues">GitHub issues</a>. If there is a problem with a course, or a change needs to be made to the curriculum, this is the place to start the conversation. Read more <a href="/CONTRIBUTING.html">here</a>.</li>
-<li>
-<p>Join our Discord server (for discussions around this and other curricula): </p>
-<p><a target="_blank" rel="noopener noreferrer" href="https://discord.gg/KHqAv4Nvm5"><img alt="discord link" src="/assets/discord.png" /></a></p>
-</li>
+<li>You can also interact through <a href="https://github.com/hocbigg/heritage-studies/issues" target="_blank" rel="noopener noreferrer">GitHub issues</a>. If there is a problem with a course, or a change needs to be made to the curriculum, this is the place to start the conversation. Read more <a href="/CONTRIBUTING.html">here</a>.</li>
 </ul>
-<h1 id="curriculum">Curriculum</h1>
-<h2 id="foundations-of-heritage-studies">Foundations of Heritage Studies</h2>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Why study?</th>
-<th>Book / Text</th>
-<th>Online Resource</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1. What Is Heritage?</td>
-<td>Core definitions, scope, and debates.</td>
-<td><em>The Uses of Heritage</em> – Laurajane Smith (optional)</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://www.open.edu/openlearn/history-the-arts/history/what-heritage/content-section-0">What is Heritage? – OpenLearn (Open University)</a></strong></td>
-</tr>
-<tr>
-<td>2. Culture, Memory, and Identity</td>
-<td>Understanding heritage as socially constructed.</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://perspectives.americananthro.org/">Perspectives: An Open Introduction to Cultural Anthropology</a></strong></td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://ocw.mit.edu/courses/21a-00-introduction-to-anthropology-spring-2013/">Introduction to Anthropology – MIT OpenCourseWare</a></strong></td>
-</tr>
-<tr>
-<td>3. Global Historical Contexts</td>
-<td>Colonialism, nationalism, globalization.</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/historyofworldin0000macg">A History of the World in 100 Objects – Neil MacGregor</a></strong></td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://www.bbc.co.uk/programmes/b00nrtd2">A History of the World in 100 Objects – BBC series</a></strong></td>
-</tr>
-</tbody>
-</table>
-<h2 id="heritage-methods-and-evidence">Heritage Methods and Evidence</h2>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Why study?</th>
-<th>Book / Text</th>
-<th>Online Resource</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>4. Archaeology and Material Culture</td>
-<td>Tangible heritage and material analysis.</td>
-<td>Renfrew &amp; Bahn, <em>Archaeology</em> (optional)</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://ocw.mit.edu/courses/3-986-the-human-past-introduction-to-archaeology-fall-2006/">The Human Past – MIT OpenCourseWare</a></strong></td>
-</tr>
-<tr>
-<td>5. Heritage Documentation and Conservation Methods</td>
-<td>Recording, preservation ethics, intervention limits.</td>
-<td>Muñoz Viñas</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://www.iccrom.org/">ICCROM – Introduction to Conservation of Cultural Heritage</a></strong> (general portal; see also related courses and publications on conservation basics)</td>
-</tr>
-<tr>
-<td>6. Intangible and Living Heritage</td>
-<td>Practices, traditions, transmission.</td>
-<td>UNESCO framework: 2003 Convention explanatory texts</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://www.iccrom.org/publication/people-centred-approaches-conservation-cultural-heritage-living-heritage">Living Heritage and Sustainable Development – UNESCO / SDG Academy</a></strong> (related ICCROM/UNESCO guidance on living heritage)</td>
-</tr>
-</tbody>
-</table>
-<h2 id="institutions-governance-and-practice">Institutions, Governance, and Practice</h2>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Why study?</th>
-<th>Book / Text</th>
-<th>Online Resource</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>7. Museums, Archives, and Collections</td>
-<td>Institutional stewardship of heritage.</td>
-<td>—</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://learninglab.si.edu/">Behind the Scenes at the 21st Century Museum – University of Leicester + Smithsonian Learning Lab</a></strong> (Smithsonian resources; Leicester course materials may require access)</td>
-</tr>
-<tr>
-<td>8. Heritage Law, Policy, and Rights</td>
-<td>Legal frameworks and power structures.</td>
-<td>Craig Forrest</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://whc.unesco.org/en/conventiontext/">UNESCO 1972 &amp; 2003 Conventions (official guides) + UNESCO repatriation case studies</a></strong> (1972); see also 2003 ICH Convention at UNESCO site</td>
-</tr>
-<tr>
-<td>9. Heritage Management and Planning</td>
-<td>Practical governance and sustainability.</td>
-<td>—</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://whc.unesco.org/en/managing-cultural-world-heritage/">UNESCO – Managing Cultural World Heritage (open manual)</a></strong> + <strong><a target="_blank" rel="noopener noreferrer" href="https://www.iccrom.org/">ICCROM – First Aid to Cultural Heritage in Times of Crisis</a></strong> (search for First Aid programme)</td>
-</tr>
-</tbody>
-</table>
-<h2 id="interpretation-ethics-and-public-engagement">Interpretation, Ethics, and Public Engagement</h2>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Why study?</th>
-<th>Book / Text</th>
-<th>Online Resource</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>10. Public History and Interpretation</td>
-<td>Communicating heritage to diverse publics.</td>
-<td><em>The Public History Reader</em> (optional)</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://www.open.edu/openlearn/history-the-arts/ethics-cultural-heritage/content-section-0">Ethics of Cultural Heritage – OpenLearn</a></strong></td>
-</tr>
-<tr>
-<td>11. Politics, Ethics, and Decolonial Heritage</td>
-<td>Contestation, ownership, identity.</td>
-<td>—</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://www.open.edu/openlearn/history-the-arts/ethics-cultural-heritage/content-section-0">OpenLearn – The Ethics of Cultural Heritage</a></strong> + <strong><a target="_blank" rel="noopener noreferrer" href="https://icom.museum/en/resources/standards-guidelines/code-of-ethics/">ICOM Code of Ethics</a></strong></td>
-</tr>
-<tr>
-<td>12. Community and Indigenous Heritage</td>
-<td>Participation, co-curation, authority.</td>
-<td>Community-based heritage management guides</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://www.futurelearn.com/courses/inclusive-museum-practices">Creating Meaningful and Inclusive Museum Practices – ICOM / FutureLearn</a></strong> (related inclusive practices)</td>
-</tr>
-</tbody>
-</table>
-<h2 id="global-digital-and-sustainable-futures">Global, Digital, and Sustainable Futures</h2>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Why study?</th>
-<th>Book / Text</th>
-<th>Online Resource</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>13. World Heritage Systems</td>
-<td>Universal value, critique, geopolitics.</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://whc.unesco.org/en/activities/">Galla, World Heritage: Benefits Beyond Borders</a></strong> (related UNESCO resources) + <strong><a target="_blank" rel="noopener noreferrer" href="https://www.open.edu/openlearn/history-the-arts/world-heritage/content-section-0">World Heritage – OpenLearn</a></strong></td>
-<td>—</td>
-</tr>
-<tr>
-<td>14. Digital Heritage</td>
-<td>Access, preservation, ethics of digitization.</td>
-<td>—</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://www.europeana.eu/en">Digital Education with Cultural Heritage – Europeana</a></strong> + <strong><a target="_blank" rel="noopener noreferrer" href="https://www.europeana.eu/en/collections">Europeana open collections</a></strong></td>
-</tr>
-<tr>
-<td>15. Heritage, Tourism, Environment, and Risk</td>
-<td>Sustainability, climate, economics.</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://whc.unesco.org/en/climatechange/">UNESCO climate &amp; heritage reports</a></strong></td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://ich.unesco.org/en/sustainable-development-00659">Living Heritage and Sustainable Development – UNESCO</a></strong></td>
-</tr>
-</tbody>
-</table>
-<h2 id="final-project">Final Project</h2>
-<p>Independent applied work demonstrating mastery. Options:</p>
-<ul>
-<li>Research paper on a heritage site/case study (e.g., analyzing politics of a UNESCO listing).</li>
-<li>Heritage management plan for a local site.</li>
-<li>Curatorial proposal or interpretive exhibit design.</li>
-<li>Critical essay on a contemporary issue (e.g., repatriation or intangible heritage safeguarding).</li>
-</ul>
-<h1 id="code-of-conduct">Code of conduct</h1>
-<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/hocbigg/code-of-conduct">Hocbigg's code of conduct</a>.</p>
-</article>
-</main>
+<h2 id="curriculum">Curriculum</h2>
+<h3 id="introduction-to-critical-heritage-studies">Introduction to Critical Heritage Studies</h3>
+<p>This subject examines foundational definitions of heritage, tracing its evolution from physical monuments to cultural processes while interrogating the Authorized Heritage Discourse (AHD) and the critical turn.</p>
+<p><a href="https://www.open.edu/openlearn/history-the-arts/history/what-heritage/content-section-0" target="_blank" rel="noopener noreferrer">What is heritage? (OpenLearn / The Open University)</a> - Recommended starting point; this free introductory course provides an accessible entry ramp to core definitions and official designations before tackling deeper theory.</p>
+<p><a href="https://books.google.com/books?isbn=9780415591959" target="_blank" rel="noopener noreferrer">Heritage: Critical Approaches (Rodney Harrison)</a> - Core comprehensive textbook; works sequentially after the OpenLearn course to build a systematic foundation in critical heritage theory.</p>
+<p><a href="https://books.google.com/books?isbn=9780415348898" target="_blank" rel="noopener noreferrer">Uses of Heritage (Laurajane Smith)</a> - A theoretical deep-dive to read alongside or immediately after Harrison; establishes the foundational Authorized Heritage Discourse (AHD) framework that underpins the entire discipline.</p>
+<h3 id="cultural-memory-commemoration-and-identity">Cultural Memory, Commemoration, and Identity</h3>
+<p>This subject explores how societies construct collective memory, deploy commemorative practices, and utilize the past to shape social, political, and national identities.</p>
+<p><a href="https://books.google.com/books?isbn=9780230297449" target="_blank" rel="noopener noreferrer">Memory in Culture (Astrid Erll)</a> - Core conceptual guide; offers a compact, structured introduction to cultural memory terms, media, and frameworks.</p>
+<p><a href="https://books.google.com/books?isbn=9780521616850" target="_blank" rel="noopener noreferrer">The Past is a Foreign Country — Revisited (David Lowenthal)</a> - An expansive, narrative alternative to Erll for learners wanting an exhaustive exploration of nostalgia and societal appropriations of history rather than a concise handbook.</p>
+<p><a href="https://books.google.com/books?isbn=9780521270939" target="_blank" rel="noopener noreferrer">How Societies Remember (Paul Connerton)</a> - A short, focused companion to Erll that specifically investigates bodily performance, ritual, and commemorative ceremonies.</p>
+<h3 id="material-culture-built-heritage-and-conservation-theory">Material Culture, Built Heritage, and Conservation Theory</h3>
+<p>This subject covers tangible heritage, architectural significance, physical decay, values-based assessment, and the philosophical ethics governing conservation intervention.</p>
+<p><a href="https://www.edx.org/learn/cultural-heritage/rwth-aachen-university-cultural-heritage-in-transformation" target="_blank" rel="noopener noreferrer">Cultural Heritage in Transformation (RWTH Aachen University / edX)</a> - Visual and practical entry point; provides an interactive foundation in documenting, evaluating, and transforming built environments.</p>
+<p><a href="https://books.google.com/books?isbn=9780750662246" target="_blank" rel="noopener noreferrer">Contemporary Theory of Conservation (Salvador Muñoz Viñas)</a> - Core theoretical text; challenges traditional material authenticity dogmas and establishes a modern, values-based conservation philosophy.</p>
+<p><a href="https://www.getty.edu/conservation/publications_resources/pdf_publications/assessing_values.html" target="_blank" rel="noopener noreferrer">Assessing the Values of Cultural Heritage (Getty Conservation Institute / Marta de la Torre, ed.)</a> - An applied, open-access companion to Muñoz Viñas that offers practical frameworks and methodologies for assessing social, historical, and economic values in conservation planning.</p>
+<h3 id="intangible-and-living-cultural-heritage">Intangible and Living Cultural Heritage</h3>
+<p>This subject addresses living cultural expressions, oral histories, traditional craftsmanship, performing arts, and community-centered frameworks for safeguarding non-physical heritage.</p>
+<p><a href="https://www.edx.org/learn/sustainable-development/sdg-academy-living-heritage-and-sustainable-development" target="_blank" rel="noopener noreferrer">Living Heritage and Sustainable Development (UNESCO &amp; SDG Academy / edX)</a> - Highly recommended entry point; a free, structured course exploring community safeguarding mechanisms and living cultural practices.</p>
+<p><a href="https://books.google.com/books?isbn=9780415473972" target="_blank" rel="noopener noreferrer">Intangible Heritage (Laurajane Smith &amp; Natsuko Akagawa, eds.)</a> - Primary academic reader; builds directly on the UNESCO course with critical essays analyzing the conceptual shifts and policy tensions surrounding intangible heritage.</p>
+<p><a href="https://books.google.com/books?isbn=9780367872076" target="_blank" rel="noopener noreferrer">The Routledge Companion to Intangible Cultural Heritage (Michelle L. Stefano &amp; Peter Davis, eds.)</a> - An alternative, broader reference anthology to Smith and Akagawa for learners seeking extensive global case studies across diverse safeguarding traditions.</p>
+<h3 id="museums-collections-and-curatorial-practice">Museums, Collections, and Curatorial Practice</h3>
+<p>This subject explores the institutional evolution of museums, provenance, collections stewardship, preventive conservation, and the politics of cultural representation.</p>
+<p><a href="https://archive.org/details/museumsinmotioni0000alex" target="_blank" rel="noopener noreferrer">Museums in Motion: An Introduction to the History and Functions of Museums (Edward P. Alexander, Mary Alexander, &amp; Juilee Decker)</a> - Primary comprehensive textbook; introduces the operational structures, curatorial functions, exhibition strategies, and institutional histories of museums.</p>
+<p><a href="https://www.coursera.org/learn/arts-heritage" target="_blank" rel="noopener noreferrer">Arts and Heritage Management (Università Bocconi / Coursera)</a> - An applied audiovisual complement to Alexander; focuses on contemporary governance, strategic decision-making, funding models, and community audience engagement.</p>
+<h3 id="international-heritage-law-policy-and-world-heritage-systems">International Heritage Law, Policy, and World Heritage Systems</h3>
+<p>This subject examines international legal mechanisms for heritage protection, the 1972 World Heritage Convention, Outstanding Universal Value (OUV), and global governance structures.</p>
+<p><a href="https://www.open.edu/openlearn/history-the-arts/ethics-cultural-heritage/content-section-0" target="_blank" rel="noopener noreferrer">The Ethics of Cultural Heritage (The Open University / OpenLearn)</a> - An accessible entry ramp; introduces the 1954 Hague Convention, military necessity, and foundational legal and ethical dilemmas in protecting cultural property during conflict.</p>
+<p><a href="https://books.google.com/books?isbn=9780415467810" target="_blank" rel="noopener noreferrer">International Law and the Protection of Cultural Heritage (Craig Forrest)</a> - Core legal reference; provides a thorough, systematic analysis of the major international conventions protecting heritage in war, peace, and trade.</p>
+<p><a href="https://books.google.com/books?isbn=9780190648367" target="_blank" rel="noopener noreferrer">A Future in Ruins: UNESCO, World Heritage, and the Dream of Peace (Lynn Meskell)</a> - Critical institutional counterpart to Forrest; examines how national diplomacy, political maneuvering, and bureaucratic interests shape actual World Heritage listings.</p>
+<h3 id="heritage-site-management-and-conservation-planning">Heritage Site Management and Conservation Planning</h3>
+<p>This subject focuses on the operational governance of heritage places, conservation management plans (CMPs), stakeholder coordination, sustainable tourism, carrying capacity, and disaster risk reduction.</p>
+<p><a href="https://whc.unesco.org/en/managing-cultural-world-heritage/" target="_blank" rel="noopener noreferrer">Managing Cultural World Heritage (UNESCO, ICCROM, ICOMOS, &amp; IUCN)</a> - Primary practical blueprint; a free open-access manual providing step-by-step guidance on crafting site management plans, defining boundaries, and establishing monitoring indicators.</p>
+<p><a href="https://books.google.com/books?isbn=9781845411770" target="_blank" rel="noopener noreferrer">Cultural Heritage and Tourism: An Introduction (Dallen J. Timothy)</a> - Complementary operational text; examines the economic opportunities, visitor carrying-capacity challenges, and commodification risks that site managers must navigate.</p>
+<h3 id="heritage-interpretation-and-public-engagement">Heritage Interpretation and Public Engagement</h3>
+<p>This subject analyzes the theoretical and practical strategies used to communicate historical and cultural significance to diverse publics through storytelling, media, and exhibitions.</p>
+<p><a href="https://archive.org/details/interpretingourh0000tild" target="_blank" rel="noopener noreferrer">Interpreting Our Heritage (Freeman Tilden)</a> - Foundational classic; establishes the six timeless principles of public heritage interpretation and thematic communication.</p>
+<p><a href="https://www.coursera.org/learn/applied-public-history" target="_blank" rel="noopener noreferrer">Applied Public History: Places, People, Stories (University of London / Coursera)</a> - An applied, interactive workshop that translates Tilden's principles into practice through place-based research, oral histories, and public storytelling.</p>
+<p><a href="https://books.google.com/books?isbn=9780415520416" target="_blank" rel="noopener noreferrer">The Public History Reader (Hilda Kean &amp; Paul Martin, eds.)</a> - An alternative academic reader for learners wanting broader scholarly perspectives on how communities consume, remember, and contest history outside academia.</p>
+<h3 id="heritage-ethics-contested-pasts-and-decolonial-practice">Heritage Ethics, Contested Pasts, and Decolonial Practice</h3>
+<p>This subject confronts the ethical controversies of the heritage sector, including antiquities looting, illicit trade, restitution of colonial plunder, difficult histories, and Indigenous sovereignty.</p>
+<p><a href="https://www.futurelearn.com/courses/art-crime" target="_blank" rel="noopener noreferrer">Antiquities Trafficking and Art Crime (University of Glasgow / FutureLearn)</a> - Introductory audiovisual course covering illicit antiquities markets, white-collar crime, and global legal recovery efforts.</p>
+<p><a href="https://books.google.com/books?isbn=9780745341767" target="_blank" rel="noopener noreferrer">The Brutish Museums: The Benin Bronzes, Colonial Violence and Cultural Restitution (Dan Hicks)</a> - A powerful monograph examining colonial plunder, universal museums, and the moral and historical imperative for repatriating looted cultural heritage.</p>
+<p><a href="https://books.google.com/books?isbn=9780715636817" target="_blank" rel="noopener noreferrer">Heritage, Communities and Archaeology (Laurajane Smith &amp; Emma Waterton)</a> - A complementary text focusing on community empowerment, descendant stakeholders, and shared archaeological authority.</p>
+<p><a href="https://www.futurelearn.com/courses/inclusive-museum-practices" target="_blank" rel="noopener noreferrer">Creating Meaningful and Inclusive Museum Practices (International Council of Museums / FutureLearn)</a> - Applied practitioner course that translates decolonial and participatory ethics into inclusive museum programming and co-curation workflows.</p>
+<h3 id="applied-heritage-capstone-project">Applied Heritage Capstone Project</h3>
+<p>This capstone module synthesizes theoretical frameworks, regulatory principles, and management tools through the independent development of a site plan, curatorial proposal, or critical policy evaluation.</p>
+<p><a href="https://books.google.com/books?isbn=9780367473082" target="_blank" rel="noopener noreferrer">Public History: A Textbook of Practice (Thomas Cauvin)</a> - Comprehensive operational manual offering practical methodologies for historical preservation, collections management, public interpretation, and project execution.</p>
+    </article>
+  </main>
 
 </body>
 </html>

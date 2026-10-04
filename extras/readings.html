@@ -1,121 +1,524 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light dark">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
 
-<title>Great Readings</title>
-<link rel="stylesheet" href="/heritage-studies/style.css">
-<meta name="description" content="">
+  <title>Great Readings in Heritage Studies</title>
+  <meta name="description" content="Great Readings in Heritage Studies curriculum by hocbigg.">
+  <meta name="author" content="hocbigg">
 
-<link rel="canonical" href="https://hocbigg.github.io/heritage-studies/">
+  <link rel="canonical" href="https://hocbigg.github.io/heritage-studies/extras/readings.html">
+  <meta property="og:title" content="Great Readings in Heritage Studies">
+  <meta property="og:description" content="Great Readings in Heritage Studies curriculum by hocbigg.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hocbigg.github.io/heritage-studies/extras/readings.html">
+  <link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
 
-<meta property="og:title" content="Great Readings">
-<meta property="og:description" content="">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://hocbigg.github.io/heritage-studies/">
-<meta name="author" content="hocbigg">
-<link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
+  <style>
+:root {
+  color-scheme: light dark;
+
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #595959;
+  --border: #e0e0e0;
+  --th-bg: #f6f8fa;
+  --code-bg: #f4f4f4;
+  --link: #0969da;
+  --focus-ring: #0969da;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #8b949e;
+    --border: #30363d;
+    --th-bg: #161b22;
+    --code-bg: #161b22;
+    --link: #58a6ff;
+    --focus-ring: #58a6ff;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1.5rem auto;
+  max-width: 60rem;
+  padding: 0 1rem 3.5rem;
+  background-color: var(--bg);
+  color: var(--fg);
+  font: 1.15rem/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Cú pháp hiện đại thay thế cho word-wrap */
+  overflow-wrap: break-word;
+}
+
+.site-header {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem 1.25rem;
+  font-size: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+nav a:hover, 
+nav a:focus-visible {
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+nav .nav-brand {
+  color: var(--fg);
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.skip-link {
+  position: absolute;
+  transform: translateY(-150%);
+  left: 1rem;
+  background: var(--fg);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(1rem);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--fg);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 1rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+p, ul, ol, blockquote, table {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+li > ul,
+li > ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:has(img) {
+  text-decoration: none;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.page-header .page-subtitle {
+  color: var(--muted);
+  font-size: 1.15rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header img {
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  background-color: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  tab-size: 2;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 0;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.75rem;
+  vertical-align: top;
+}
+
+th {
+  background-color: var(--th-bg);
+  font-weight: 600;
+}
+
+blockquote {
+  margin-inline: 0;
+  border-left: 4px solid var(--border);
+  padding-left: 1rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  body {
+    max-width: none;
+    color: #000;
+    background: #fff;
+  }
+  .skip-link, nav {
+    display: none;
+  }
+}
+  </style>
 </head>
-
 <body>
 
-<nav>
-<a href="/">Hocbigg</a>
-<a href="/heritage-studies/">Heritage-Studies</a>
-<a href="/heritage-studies/extras/courses.html">Extra Courses</a>
-<a href="/heritage-studies/extras/readings.html">Extra Reading</a>
-<a href="https://github.com/hocbigg/heritage-studies/" target="_blank">View on Github</a>
-</nav>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<main>
-<article>
+  <header class="site-header">
+    <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="https://hocbigg.github.io/" class="nav-brand">Hocbigg</a></li>
+      <li><a href="/heritage-studies/">Heritage Studies</a></li>
+      <li><a href="/heritage-studies/extras/readings.html">Extra Readings</a></li>
+      <li><a href="/heritage-studies/extras/courses.html">Extra Courses</a></li>
+      <li><a href="https://github.com/hocbigg/heritage-studies" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    </nav>
+  </header>
 
-<h1 id="great-readings">Great Readings</h1>
-<p>This document consists of great books or articles on Heritage Studies.
-Some are here because there is a course covering the same material;
-some are just great books that you should read at some point in your career.</p>
-<p>Once you have made it through most of the curriculum, knowing whether a book is worth your time will become easier.
-Or, if you are struggling in one of the courses, perhaps reading a book on the subject will help.</p>
-<h2 id="critical-heritage-theory">Critical Heritage Theory</h2>
-<table>
+  <main id="main-content">
+    <article>
+
+<h1 id="great-readings-in-heritage-studies">Great Readings in Heritage Studies</h1>
+<p>This curated collection brings together seminal monographs, transformative theoretical frameworks, and field-defining essays in Heritage Studies. Moving beyond introductory surveys, these works showcase how scholars and practitioners have challenged preservationist orthodoxies, historicized institutional power, and articulated the socio-political stakes of memory, curation, and conservation.</p>
+<h2 id="foundational-classics-critical-heritage-theory">Foundational Classics &amp; Critical Heritage Theory</h2>
+<div class="table-wrapper" tabindex="0" role="region" aria-label="Scrollable table"><table>
 <thead>
 <tr>
-<th style="text-align: left;">Name</th>
-<th style="text-align: center;">Author(s)</th>
+<th style="text-align: left;">Title</th>
+<th style="text-align: left;">Author(s)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://www.amazon.com/Geography-Heritage-Power-Culture-Economy/dp/0340677784">A Geography of Heritage: Power, Culture and Economy</a></td>
-<td style="text-align: center;">Brian Graham, Gregory John Ashworth, John E. Tunbridge</td>
+<td style="text-align: left;"><a href="https://archive.org/details/pastisforeigncou0000lowe" target="_blank" rel="noopener noreferrer"><em>The Past is a Foreign Country</em></a></td>
+<td style="text-align: left;">David Lowenthal</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://www.amazon.com/Heritage-Crusade-Spoils-History/dp/0521635624">The Heritage Crusade and the Spoils of History</a></td>
-<td style="text-align: center;">David Lowenthal</td>
+<td style="text-align: left;"><a href="https://archive.org/details/heritagecrusades0000lowe" target="_blank" rel="noopener noreferrer"><em>The Heritage Crusade and the Spoils of History</em></a></td>
+<td style="text-align: left;">David Lowenthal</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://books.google.com/books?isbn=9780415348898" target="_blank" rel="noopener noreferrer"><em>Uses of Heritage</em></a></td>
+<td style="text-align: left;">Laurajane Smith</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://library.oapen.org/handle/20.500.12657/61147" target="_blank" rel="noopener noreferrer"><em>“Whose Heritage? Un-settling 'The Heritage', Re-imagining the Post-nation”</em></a></td>
+<td style="text-align: left;">Stuart Hall</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://archive.org/details/dissonantheritag0000tunb" target="_blank" rel="noopener noreferrer"><em>Dissonant Heritage: The Management of the Past as a Resource in Conflict</em></a></td>
+<td style="text-align: left;">J. E. Tunbridge and Gregory John Ashworth</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://books.google.com/books?isbn=9780413161109" target="_blank" rel="noopener noreferrer"><em>The Heritage Industry: Britain in a Climate of Decline</em></a></td>
+<td style="text-align: left;">Robert Hewison</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://archive.org/details/inventionofhisto0000choa" target="_blank" rel="noopener noreferrer"><em>The Invention of the Historic Monument</em></a></td>
+<td style="text-align: left;">Françoise Choay</td>
 </tr>
 </tbody>
-</table>
-<h2 id="museum-studies">Museum Studies</h2>
-<table>
+</table></div>
+<h2 id="memory-space-monumentality">Memory, Space, &amp; Monumentality</h2>
+<div class="table-wrapper" tabindex="0" role="region" aria-label="Scrollable table"><table>
 <thead>
 <tr>
-<th style="text-align: left;">Name</th>
-<th style="text-align: center;">Author(s)</th>
+<th style="text-align: left;">Title</th>
+<th style="text-align: left;">Author(s)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://www.amazon.com/Museums-Society-Inequality-Richard-Sandell/dp/0415260604">Museums, Society, Inequality</a></td>
-<td style="text-align: center;">Richard Sandell (ed.)</td>
+<td style="text-align: left;"><a href="https://archive.org/details/realmsofmemoryre00nora" target="_blank" rel="noopener noreferrer"><em>Realms of Memory: Rethinking the French Past (Vol. 1: Conflicts and Divisions)</em></a></td>
+<td style="text-align: left;">Pierre Nora (ed.)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://www.amazon.com/Practical-Guide-Museum-Ethics/dp/1442271637">A Practical Guide to Museum Ethics</a></td>
-<td style="text-align: center;">Sally Yerkovich</td>
+<td style="text-align: left;"><a href="https://archive.org/details/isbn_9780465007073" target="_blank" rel="noopener noreferrer"><em>The Future of Nostalgia</em></a></td>
+<td style="text-align: left;">Svetlana Boym</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://archive.org/details/illuminationsben00benj" target="_blank" rel="noopener noreferrer"><em>“The Work of Art in the Age of Mechanical Reproduction”</em> (in <em>Illuminations</em>)</a></td>
+<td style="text-align: left;">Walter Benjamin</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://books.google.com/books?isbn=9780300059915" target="_blank" rel="noopener noreferrer"><em>The Texture of Memory: Holocaust Memorials and Meaning</em></a></td>
+<td style="text-align: left;">James E. Young</td>
 </tr>
 </tbody>
-</table>
-<h2 id="conservation-and-management">Conservation and Management</h2>
-<table>
+</table></div>
+<h2 id="museums-power-curatorial-politics">Museums, Power, &amp; Curatorial Politics</h2>
+<div class="table-wrapper" tabindex="0" role="region" aria-label="Scrollable table"><table>
 <thead>
 <tr>
-<th style="text-align: left;">Name</th>
-<th style="text-align: center;">Author(s)</th>
+<th style="text-align: left;">Title</th>
+<th style="text-align: left;">Author(s)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://www.amazon.com/Past-Foreign-Country-Revisited/dp/110760574X">The Past is a Foreign Country - Revisited</a></td>
-<td style="text-align: center;">David Lowenthal</td>
+<td style="text-align: left;"><a href="https://archive.org/details/birthofmuseumhis0000benn" target="_blank" rel="noopener noreferrer"><em>The Birth of the Museum: History, Theory, Politics</em></a></td>
+<td style="text-align: left;">Tony Bennett</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://www.getty.edu/publications/occasional-papers-5/">Values in Heritage Management: Emerging Approaches and Research Directions</a></td>
-<td style="text-align: center;">Erica Avrami, Susan Macdonald, Randall Mason, David Myers (eds.) (Free PDF available from Getty)</td>
+<td style="text-align: left;"><a href="https://archive.org/details/routestraveltran0000clif" target="_blank" rel="noopener noreferrer"><em>“Museums as Contact Zones”</em> (in <em>Routes: Travel and Translation in the Late Twentieth Century</em>)</a></td>
+<td style="text-align: left;">James Clifford</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://archive.org/details/museumsandshapin0000hoop" target="_blank" rel="noopener noreferrer"><em>Museums and the Shaping of Knowledge</em></a></td>
+<td style="text-align: left;">Eilean Hooper-Greenhill</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://books.google.com/books?isbn=9780415260602" target="_blank" rel="noopener noreferrer"><em>Museums, Society, Inequality</em></a></td>
+<td style="text-align: left;">Richard Sandell (ed.)</td>
 </tr>
 </tbody>
-</table>
-<h2 id="intangible-and-sustainable-heritage">Intangible and Sustainable Heritage</h2>
-<table>
+</table></div>
+<h2 id="conservation-philosophy-values-heritage-futures">Conservation Philosophy, Values, &amp; Heritage Futures</h2>
+<div class="table-wrapper" tabindex="0" role="region" aria-label="Scrollable table"><table>
 <thead>
 <tr>
-<th style="text-align: left;">Name</th>
-<th style="text-align: center;">Author(s)</th>
+<th style="text-align: left;">Title</th>
+<th style="text-align: left;">Author(s)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://www.amazon.com/Safeguarding-Intangible-Cultural-Heritage-Michelle/dp/1843839741">Safeguarding Intangible Cultural Heritage</a></td>
-<td style="text-align: center;">Michelle L. Stefano, Peter Davis, Gerard Corsane (eds.)</td>
+<td style="text-align: left;"><a href="https://www.gutenberg.org/ebooks/35898" target="_blank" rel="noopener noreferrer"><em>The Seven Lamps of Architecture</em> (featuring “The Lamp of Memory”)</a></td>
+<td style="text-align: left;">John Ruskin</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://www.uclpress.co.uk/products/123456">Heritage Futures: Comparative Approaches to Natural and Cultural Heritage Practices</a></td>
-<td style="text-align: center;">Rodney Harrison et al. (Free open access PDF)</td>
+<td style="text-align: left;"><a href="https://archive.org/details/historicalphilos0000unse_n4j2" target="_blank" rel="noopener noreferrer"><em>“The Modern Cult of Monuments: Its Character and Its Origin”</em> (in <em>Historical and Philosophical Issues in the Conservation of Cultural Heritage</em>)</a></td>
+<td style="text-align: left;">Alois Riegl</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://books.google.com/books?isbn=9788840440897" target="_blank" rel="noopener noreferrer"><em>Theory of Restoration</em></a></td>
+<td style="text-align: left;">Cesare Brandi</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://books.google.com/books?isbn=9780750662246" target="_blank" rel="noopener noreferrer"><em>Contemporary Theory of Conservation</em></a></td>
+<td style="text-align: left;">Salvador Muñoz Viñas</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://books.google.com/books?isbn=9780816694389" target="_blank" rel="noopener noreferrer"><em>Curated Decay: Heritage Beyond Saving</em></a></td>
+<td style="text-align: left;">Caitlin DeSilvey</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://www.getty.edu/publications/heritagemanagement/" target="_blank" rel="noopener noreferrer"><em>Values in Heritage Management: Emerging Approaches and Research Directions</em></a></td>
+<td style="text-align: left;">Erica Avrami, Susan Macdonald, Randall Mason, and David Myers (eds.)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://www.uclpress.co.uk/products/125036" target="_blank" rel="noopener noreferrer"><em>Heritage Futures: Comparative Approaches to Natural and Cultural Heritage Practices</em></a></td>
+<td style="text-align: left;">Rodney Harrison, Caitlin DeSilvey, Cornelius Holtorf, Sharon Macdonald, et al.</td>
 </tr>
 </tbody>
-</table>
-</article>
-</main>
+</table></div>
+<h2 id="international-governance-world-heritage-politics">International Governance &amp; World Heritage Politics</h2>
+<div class="table-wrapper" tabindex="0" role="region" aria-label="Scrollable table"><table>
+<thead>
+<tr>
+<th style="text-align: left;">Title</th>
+<th style="text-align: left;">Author(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="https://books.google.com/books?isbn=9780190648367" target="_blank" rel="noopener noreferrer"><em>A Future in Ruins: UNESCO, World Heritage, and the Dream of Peace</em></a></td>
+<td style="text-align: left;">Lynn Meskell</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://books.google.com/books?isbn=9780415467810" target="_blank" rel="noopener noreferrer"><em>International Law and the Protection of Cultural Heritage</em></a></td>
+<td style="text-align: left;">Craig Forrest</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://books.google.com/books?isbn=9781785330919" target="_blank" rel="noopener noreferrer"><em>World Heritage on the Ground: Ethnographic Perspectives</em></a></td>
+<td style="text-align: left;">Christoph Brumann and David Berliner (eds.)</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="intangible-heritage-living-traditions">Intangible Heritage &amp; Living Traditions</h2>
+<div class="table-wrapper" tabindex="0" role="region" aria-label="Scrollable table"><table>
+<thead>
+<tr>
+<th style="text-align: left;">Title</th>
+<th style="text-align: left;">Author(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="https://books.google.com/books?isbn=9781843837107" target="_blank" rel="noopener noreferrer"><em>Safeguarding Intangible Cultural Heritage</em></a></td>
+<td style="text-align: left;">Michelle L. Stefano, Peter Davis, and Gerard Corsane (eds.)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://books.google.com/books?isbn=9780415473972" target="_blank" rel="noopener noreferrer"><em>Intangible Heritage</em></a></td>
+<td style="text-align: left;">Laurajane Smith and Natsuko Akagawa (eds.)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://books.google.com/books?isbn=9780253037947" target="_blank" rel="noopener noreferrer"><em>Making Intangible Heritage: El Condor Pasa and Other Stories from UNESCO</em></a></td>
+<td style="text-align: left;">Valdimar Tr. Hafstein</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="contested-pasts-decoloniality-restitution">Contested Pasts, Decoloniality, &amp; Restitution</h2>
+<div class="table-wrapper" tabindex="0" role="region" aria-label="Scrollable table"><table>
+<thead>
+<tr>
+<th style="text-align: left;">Title</th>
+<th style="text-align: left;">Author(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="https://books.google.com/books?isbn=9780745341767" target="_blank" rel="noopener noreferrer"><em>The Brutish Museums: The Benin Bronzes, Colonial Violence and Cultural Restitution</em></a></td>
+<td style="text-align: left;">Dan Hicks</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://books.google.com/books?isbn=9780415419925" target="_blank" rel="noopener noreferrer"><em>Difficult Heritage: Negotiating the Nazi Past in Nuremberg and Beyond</em></a></td>
+<td style="text-align: left;">Sharon Macdonald</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://books.google.com/books?isbn=9780674016330" target="_blank" rel="noopener noreferrer"><em>Who Owns Native Culture?</em></a></td>
+<td style="text-align: left;">Michael F. Brown</td>
+</tr>
+</tbody>
+</table></div>
+    </article>
+  </main>
 
 </body>
 </html>
